@@ -15,13 +15,14 @@ class Queue:
         self._mode = mode
 
     def enqueue(self, item):
-        if self._mode == 'FIFO'
+        if self._mode == 'FIFO':
             self._queue.append(item)
-        elif self._mode == 'LIFO'  
+        elif self._mode == 'LIFO':  
             self._queue.insert(0, item)  
-
+        puesto = self._queue.index(item) 
+            
         # fill this function with the logic needed to make it work
-        return 
+        return puesto 
 
     def dequeue(self):
         return self._queue.pop(0)
@@ -29,9 +30,10 @@ class Queue:
         pass
 
     def get_all(self):
+        return self._queue
 
         # fill this function with the logic needed to make it work
-        pass
+        
 
     def size(self):
         return len(self._queue)
