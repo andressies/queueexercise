@@ -15,10 +15,16 @@ class Queue:
         self._mode = mode
 
     def enqueue(self, item):
+        if self._mode == 'FIFO'
+            self._queue.append(item)
+        elif self._mode == 'LIFO'  
+            self._queue.insert(0, item)  
+
         # fill this function with the logic needed to make it work
-        pass
+        return 
 
     def dequeue(self):
+        return self._queue.pop(0)
         # fill this function with the logic needed to make it work
         pass
 
@@ -28,6 +34,6 @@ class Queue:
         pass
 
     def size(self):
-
+        return len(self._queue)
         # fill this function with the logic needed to make it work
         pass
